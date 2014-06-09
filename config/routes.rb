@@ -1,4 +1,20 @@
 Prayers::Application.routes.draw do
+  get "users/new"
+
+  #get "static/home"
+  root to: "static#home"
+
+  match '/signup', to: 'users#new'
+
+  #get "static/help"
+  match '/help', to: "static#help"
+
+  #get "static/about"
+  match '/about', to: "static#about"
+
+  #get "static/contact"
+  match '/contact', to: "static#contact"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
