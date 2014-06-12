@@ -1,5 +1,8 @@
 Prayers::Application.routes.draw do
-  get "users/new"
+
+  resources :users
+
+  #get "users/new"
 
   #get "static/home"
   root to: "static#home"
